@@ -1,7 +1,7 @@
 import os
 
 # Caminho completo para o opencv_traincascade.exe
-opencv_traincascade_path = r"C:/Users/vinicius.d.souza/Downloads/opencv/build/x64/vc15/bin/opencv_traincascade.exe"
+opencv_traincascade_path = r"C:/Users/vinid/Downloads/opencv/build/x64/vc15/bin/opencv_traincascade.exe"
 
 # Diretório onde o classificador será salvo
 output_dir = 'cascade'
