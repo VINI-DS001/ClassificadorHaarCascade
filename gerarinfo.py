@@ -5,9 +5,11 @@ dataset = 'Boot BMP'
 # Arquivo info.txt que será gerado
 output_info_file = 'info.txt'
 
-# Dimensões das imagens positivas (todas têm o mesmo tamanho)
-image_width = 136  # A largura real das suas imagens
-image_height = 102  # A altura real das suas imagens
+# Coordenadas e dimensões do recorte para as imagens positivas
+x = 8  # Coordenada x do canto superior esquerdo do objeto
+y = 5  # Coordenada y do canto superior esquerdo do objeto
+object_width = 119  # Largura do objeto
+object_height = 93  # Altura do objeto
 
 # Verificar se a pasta Boot BMP existe
 if not os.path.exists(dataset):
@@ -21,6 +23,6 @@ else:
                 # Caminho completo para a imagem
                 image_path = os.path.join(dataset, filename)
                 # Escrever a linha no formato esperado
-                f.write(f"{image_path} 1 0 0 {image_width} {image_height}\n")
+                f.write(f"{image_path} 1 {x} {y} {object_width} {object_height}\n")
 
     print(f"Arquivo {output_info_file} gerado com sucesso!")
