@@ -1,7 +1,11 @@
 import os
 
 # Caminho completo para o opencv_traincascade.exe
+<<<<<<< HEAD
 opencv_traincascade_path = r"haartraining.exe"
+=======
+opencv_traincascade_path = r"C:/Users/vinid/Downloads/opencv/build/x64/vc15/bin/opencv_traincascade.exe"
+>>>>>>> 955bbf5c0e81c0f3b42c649c54705a89b14741ee
 
 # Diretório onde o classificador será salvo
 output_dir = 'cascade'

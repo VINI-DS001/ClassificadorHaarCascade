@@ -2,22 +2,27 @@
 
 Equipe: Felipe Leão, Luan Machado, Vinícius Souza
 
-Este repositório contém os códigos e documentação do projeto de construção e treinamento de um **Classificador Haar Cascade** para detecção de objetos em imagens. O projeto utiliza o OpenCV para criar o classificador e realizar a extração de características, bem como o treinamento usando imagens positivas e negativas.
+Este repositório contém os códigos e documentação do projeto de construção e treinamento de um **Classificador Haar Cascade** para detecção de objetos específicos em imagens. O projeto utiliza o OpenCV para criar o classificador e realizar a extração de características, bem como o treinamento usando imagens positivas e negativas.
 
 ## Índice
 - [Descrição do Projeto](#descrição-do-projeto)
 - [Timeline do Projeto](#timeline-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Timeline do Projeto](#timeline-do-projeto)
 - [Instalação e Execução](#instalação-e-execução)
 - [Treinamento e Geração dos Arquivos](#treinamento-e-geração-dos-arquivos)
     - [Geração do Arquivo .vec](#geração-do-arquivo-vec)
     - [Geração dos Arquivos info.txt e bg.txt](#geração-dos-arquivos-infotxt-e-bgtxt)
 - [Conjunto de Dados](#conjunto-de-dados)
+<<<<<<< HEAD
 - [Conversão de Imagens](#conversão-de-imagens)
+=======
+- [Conversão de Imagens](#conversao-de-imagens)
+>>>>>>> 955bbf5c0e81c0f3b42c649c54705a89b14741ee
 
 ## Descrição do Projeto
 
-Este projeto tem como objetivo construir um classificador utilizando o método Haar Cascade para a detecção de objetos visuais a partir de imagens. O processo inclui a conversão de imagens para o formato BMP, a criação do arquivo de vetores `.vec`, a geração de arquivos de descrição (`info.txt` e `bg.txt`), e o treinamento do classificador Haar Cascade com as imagens positivas e negativas.
+Este projeto tem como objetivo treinar um classificador utilizando o método Haar Cascade para a detecção de objetos visuais a partir de imagens. O processo inclui a criação do arquivo de vetores `.vec`, a geração de arquivos de descrição (`info.txt` e `bg.txt`), e o treinamento do classificador Haar Cascade com as imagens positivas e negativas.
 
 ## Timeline do Projeto
 
@@ -30,9 +35,21 @@ Uma alternativa encontrada foi o treinamento realizado através da aplicação [
 ## Tecnologias Utilizadas
 - Python 3.x
 - OpenCV 3.4.x
+<<<<<<< HEAD
+=======
+- Cascade Trainer GUI
+>>>>>>> 955bbf5c0e81c0f3b42c649c54705a89b14741ee
 - PIL (Python Imaging Library)
 - Bibliotecas: `numpy`, `opencv-python`, `Pillow`
 - Git/GitHub para controle de versão e colaboração
+
+## Timeline do Projeto
+
+Inicialmente foi realizada a tentativa de seguir o procedimento descrito pelo [documento da Universidade de Auckland](https://github.com/felipecbarelli/livro-visao-computacional/blob/master/tutoriais/creating-a-cascade-of-haar-like-classifiers.pdf), utilizando o dataset "Boot" obtido no site Kaggle, entretanto não foi possível gerar corretamente os arquivos .txt.
+
+Através de uma pesquisa mais aprofundada descobrimos que era necessário utilizar a versão 3.4.x do OpenCV devido aos métodos de treinamento do Haar Cascade terem sido removidos em versões 4.x Uma nova tentativa foi realizada utilizando a versão 3.4.16 do OpenCV, porém não foi possível gerar o arquivo .xml por conta de erros oriundos do arquivo do vetor.
+
+Uma nova tentativa foi realizada através da aplicação [Cascade Trainer GUI](https://amin-ahmadi.com/cascade-trainer-gui/), criada pelo desenvolvedor de software Amin Ahmadi, o que possibilitou realizar o treinamento de vários datasets, variando suas features de treino para testar sua eficiência.
 
 ## Instalação e Execução
 
