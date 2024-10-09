@@ -1,7 +1,7 @@
 import os
 
 # Diretório contendo as imagens negativas
-negative_images_dir = 'Imagens Negativas'
+negative_images_dir = 'ImagensNegativas'
 # Arquivo bg.txt que será gerado
 output_bg_file = 'bg.txt'
 

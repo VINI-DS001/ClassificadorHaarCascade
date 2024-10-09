@@ -1,7 +1,7 @@
 import os
 
 # Caminho completo para o opencv_traincascade.exe
-opencv_traincascade_path = r"C:/Users/vinicius.d.souza/Downloads/opencv/build/x64/vc15/bin/opencv_traincascade.exe"
+opencv_traincascade_path = r"haartraining.exe"
 
 # Diretório onde o classificador será salvo
 output_dir = 'cascade'
@@ -10,9 +10,9 @@ os.makedirs(output_dir, exist_ok=True)
 # Parâmetros do treinamento
 vec_file = 'positives.vec'  # Arquivo .vec gerado
 bg_file = 'bg.txt'  # Arquivo bg.txt gerado
-numPos = 200  # Número de imagens positivas
-numNeg = 200  # Número de imagens negativas
-numStages = 10  # Número de estágios do classificador
+numPos = 600 # Número de imagens positivas
+numNeg = 600  # Número de imagens negativas
+numStages = 5  # Número de estágios do classificador
 w, h = 24, 24  # Dimensão da janela de detecção
 feature_type = 'HAAR'  # Tipo de característica (HAAR)
 
