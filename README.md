@@ -14,11 +14,7 @@ Este repositório contém os códigos e documentação do projeto de construçã
     - [Geração do Arquivo .vec](#geração-do-arquivo-vec)
     - [Geração dos Arquivos info.txt e bg.txt](#geração-dos-arquivos-infotxt-e-bgtxt)
 - [Conjunto de Dados](#conjunto-de-dados)
-<<<<<<< HEAD
 - [Conversão de Imagens](#conversão-de-imagens)
-=======
-- [Conversão de Imagens](#conversao-de-imagens)
->>>>>>> 955bbf5c0e81c0f3b42c649c54705a89b14741ee
 
 ## Descrição do Projeto
 
@@ -35,10 +31,6 @@ Uma alternativa encontrada foi o treinamento realizado através da aplicação [
 ## Tecnologias Utilizadas
 - Python 3.x
 - OpenCV 3.4.x
-<<<<<<< HEAD
-=======
-- Cascade Trainer GUI
->>>>>>> 955bbf5c0e81c0f3b42c649c54705a89b14741ee
 - PIL (Python Imaging Library)
 - Bibliotecas: `numpy`, `opencv-python`, `Pillow`
 - Git/GitHub para controle de versão e colaboração
