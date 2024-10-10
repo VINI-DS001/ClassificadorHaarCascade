@@ -26,7 +26,7 @@ Inicialmente foi realizada a tentativa de seguir o procedimento descrito pelo [d
 
 Através de uma pesquisa mais aprofundada descobrimos que era necessário utilizar a versão 3.4.x do OpenCV devido aos métodos de treinamento do Haar Cascade terem sido removidos em versões 4.x Uma nova tentativa foi realizada utilizando a versão 3.4.16 do OpenCV, sendo possível gerar o arquivo .xml para detectar os objetos.
 
-Uma alternativa encontrada foi o treinamento realizado através da aplicação [Cascade Trainer GUI](https://amin-ahmadi.com/cascade-trainer-gui/), criada pelo desenvolvedor de software Amin Ahmadi, o que possibilitou realizar o treinamento de vários datasets, variando suas features de treino para testar sua eficiência.
+Uma alternativa encontrada foi o treinamento realizado através da aplicação [Cascade Trainer GUI](https://amin-ahmadi.com/cascade-trainer-gui/), criada pelo desenvolvedor de software Amin Ahmadi, o que possibilitou realizar o treinamento de vários datasets, variando suas features de treino para testar sua eficiência. Para realizar o treinamento através dessa aplicação, deve-se criar um diretório contendo duas pastas, "p" e "n", que contém respectivamente as imagens positivas e negativas. Ao abrir a aplicação, deve-se selecionar o diretório e ajustar os parâmetros de nº de estágios, quantidade de imagens positivas e negativas a serem usadas e a memória a ser usada. Por fim, deve-se iniciar o treinamento e aguardar a criação do arquivo .xml.
 
 ## Tecnologias Utilizadas
 - Python 3.x
